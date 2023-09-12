@@ -47,7 +47,7 @@ export const DashboardPage: React.FC = () => {
                         }}
                         title={t("dashboard.deliveryMap.title")}
                     />
-                    <DeliveryMap />
+                    {/* <DeliveryMap /> */}
                 </Card>
             </Grid>
             <Grid item xs={24} md={8} xl={6}>
