@@ -5,7 +5,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { getServerSession } from "next-auth";
 import { authOptions } from "../api/auth/[...nextauth]";
 
-export default function BlogPostList() {
+export default function TemplateList() {
 	return <MuiListInferencer />;
 }
 
@@ -20,7 +20,7 @@ export const getServerSideProps: GetServerSideProps<{}> = async (context) => {
 				...translateProps,
 			},
 			redirect: {
-				destination: `/login?to=${encodeURIComponent("/blog-posts")}`,
+				destination: `/login?to=${encodeURIComponent("/templates")}`,
 				permanent: false,
 			},
 		};

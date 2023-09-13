@@ -10,12 +10,18 @@
     "refine": "refine"
   },
   "dependencies": {
+    "@bpmn-io/form-js": "^1.2.0",
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
+    "@jsonforms/core": "^3.1.0",
+    "@jsonforms/material-renderers": "^3.1.0",
+    "@jsonforms/react": "^3.1.0",
     "@mui/icons-material": "^5.8.3",
     "@mui/lab": "^5.0.0-alpha.85",
     "@mui/material": "^5.8.6",
+    "@mui/styles": "^5.14.7",
     "@mui/x-data-grid": "^6.6.0",
+    "@mui/x-date-pickers": "^6.13.0",
     "@refinedev/cli": "^2.7.4",
     "@refinedev/core": "^4.28.2",
     "@refinedev/inferencer": "^4.3.2",

@@ -48,7 +48,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout): JSX.Element {
 
 	return (
 		<>
-			<GitHubBanner />
+			{/* <GitHubBanner /> */}
 			<RefineKbarProvider>
 				<ColorModeContextProvider>
 					<CssBaseline />
@@ -56,7 +56,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout): JSX.Element {
 					<RefineSnackbarProvider>
 						<Refine
 							routerProvider={routerProvider}
-							dataProvider={{ default: dataProvider(API_URL), mongoose: dataProvider(KRAFT_API_URL) }}
+							dataProvider={{ default: dataProvider(API_URL), kraft: dataProvider(KRAFT_API_URL) }}
 							notificationProvider={notificationProvider}
 							authProvider={authProvider}
 							i18nProvider={i18nProvider}
@@ -68,7 +68,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout): JSX.Element {
 									edit: "/templates/edit/:id", // ? PATCH
 									show: "/templates/show/:id", // ? GET
 									meta: {
-										dataProviderName: "mongoose",
+										dataProviderName: "kraft",
 										canDelete: true,
 									},
 								},
